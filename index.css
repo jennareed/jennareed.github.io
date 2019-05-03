@@ -1,0 +1,595 @@
+/* this is a comment */
+
+/* 
+identifier {
+	thingtochange: thingtochangeto;
+}
+*/
+
+
+/*
+body {
+	background-image: url('images/background.JPG');
+	background-repeat: repeat-x;
+	background-size: 1500px 1500px;
+	background-color: beige;
+}
+*/
+
+/*
+body {
+  background-image: url("images/river.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-05 {width: 4.165%;}
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+th, td {
+  padding-right:  30px;
+}
+
+.link_list img {
+  height: 30px;
+  width: 30px;
+  float: left;
+}
+
+#no-pad {
+  padding: 0px;
+}
+
+#parent {
+	height: 100%;
+}
+
+#child {
+	height: 50%;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  /*border-right: 1px solid black;*/
+  text-align: justify;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  height: inherit;
+  
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: white;
+  top: 0;
+  width: 100%;
+  border-bottom: 0.5px solid gray;
+  box-shadow: 0 4px 4px -4px gray;
+  z-index: 99;
+}
+
+hr {
+  border:none;
+  height: 20px;
+  width: 100%;
+  height: 50px;
+  margin-top: 0;
+  border-bottom: 1px solid #1f1209;
+  box-shadow: 0 10px 10px -10px #333;
+  margin: -50px auto 10px; 
+}
+
+.main {
+  margin-top: 5%;
+}
+
+.photo-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.image-cropper {
+    position: center;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.circle-pic {
+  border-radius: 50%;
+  width: 100%;
+}
+
+.circle-pic-sm {
+  border-radius: 50%;
+  width: 60%;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For desktop: */
+  .circle-pic {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* For phone: */
+  .circle-pic-sm {
+    display: none;
+  }
+
+}
+
+
+
+.background-white {
+  background-color: white;
+  padding: 10px;
+  opacity: 0.9;
+}
+
+.poem {
+  text-align: center;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+}
+
+.display-middle-pubs {
+    position: absolute;
+    top: 7.5%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+
+.display-middle {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+
+.align-right {
+  text-align: right;
+  margin-right: 2%;
+}
+
+.align-left {
+  text-align: left;
+  margin-left: 2%;
+}
+
+.display-top {
+    top: 2%;
+}
+
+.display-tableau {
+    position: relative;
+    left: 15%;
+}
+
+.display-middle::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.smalltext {
+  font-size: 10px;
+}
+
+.image-width {
+  width: 100%;
+}
+
+
+.buffer2 {
+  margin-top: 2%;
+}
+
+.buffer4 {
+  margin-top: 4%;
+}
+
+.buffer5 {
+  margin-top: 5%;
+}
+
+.buffer6 {
+  margin-top: 6%;
+}
+
+.buffer8 {
+  margin-top: 8%;
+}
+
+.buffer10 {
+  margin-top: 10%;
+}
+
+.buffer12 {
+  margin-top: 12%;
+}
+
+.buffer15 {
+  margin-top: 15%;
+}
+
+.buffer20 {
+  margin-top: 20%;
+}
+
+.buffer22 {
+  margin-top: 22%;
+}
+
+.buffer25 {
+  margin-top: 25%;
+}
+
+.buffer30 {
+  margin-top: 30%;
+}
+
+.buffer50 {
+  margin-top: 50%;
+}
+
+.buffer60 {
+  margin-top: 60%;
+}
+
+.buffer75 {
+  margin-top: 75%;
+}
+
+.display-left {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    transform: translate(-10%,-10%);
+    -ms-transform: translate(-10%,-10%);
+}
+
+.display-margin-top {
+    margin-top: 30%;
+}
+
+.display-center {
+    text-align: center!important;
+}
+
+.w3-text-white, .w3-hover-text-white:hover {
+    color: #fff!important;
+}
+
+.w3-xxlarge {
+    font-size: 30px!important;
+}
+
+.w3-padding {
+    padding: 8px 16px!important;
+}
+
+.w3-opacity-min {
+    opacity: 0.80;
+}
+
+.w3-black, .w3-hover-black:hover {
+    color: #fff!important;
+    background-color: #000!important;
+    border-radius: 10px;
+}
+
+.w3-green {
+    color: #fff!important;
+    background-color: darkgreen;
+    border-radius: 10px;
+}
+
+.w3-blue {
+    background-color: blue;
+}
+
+.boxgrey {
+    background-color: grey;
+}
+
+.w3-text-light-grey, .w3-hover-text-light-grey:hover, .w3-text-light-gray, .w3-hover-text-light-gray:hover {
+    color: #f1f1f1!important;
+}
+
+.text-dark-grey {
+  color: darkgrey;
+}
+
+.border-round {
+    border-radius: 10px;
+}
+
+.container {
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  opacity: 0.8;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 28px;
+}
+
+.centered-align {
+  text-align: center;
+}
+
+.centered_list {
+  text-align: center;
+}
+
+.centered_list li{
+  display: inline;
+  list-style: none;
+  text-align: center;
+  position: center;
+}
+
+.header-block {
+  border-radius: 10px;
+  background-color: black;
+}
+
+.header-text {
+  color: white;
+}
+
+.circle {
+  border-radius: 100px;
+  height: 20px;
+  width: 20px;
+}
+
+.bodybackground {
+	background-color: white;
+  margin: 0px;
+}
+
+a:link, a:visited {
+  color: black; 
+  background-color: transparent; 
+  text-decoration: none;
+}
+
+a:hover {
+  color: darkblue;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+h1 {
+	color: black;
+	font-family: "Avenir", Helvetica, Arial, sans-serif;
+	text-align: center;
+}
+
+h2 {
+	color: black;
+	font-family: "Avenir", Helvetica, Arial, sans-serif;
+	text-align: center;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.h2b {
+  color: black;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  text-align: left;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+h3 {
+	color: black;
+	font-family: "Avenir", Helvetica, Arial, sans-serif;
+	font-size: 28px;
+	text-align: center;
+	line-height: 0.01px;
+}
+
+h4 {
+  color: black;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  font-size: 26px;
+  text-align: center;
+  line-height: 0;
+  margin: 2%;
+  padding: 2%;
+}
+
+h5 {
+  color: black;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  margin-left: 2%;
+  margin-top: 2%;
+}
+
+h6 {
+  color: black;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  text-align: center;
+  font-size: 18px;
+  margin: 0px;
+  padding: 0px;
+  font-weight: normal;
+}
+
+div p{
+	/*any p that is a child of a div will have this styling */
+	font-family: "Avenir", Helvetica, Arial, sans-serif;
+	text-align: center;
+	color: black;
+
+}
+
+hr {
+  border:none;
+  height: 0px;
+}
+
+
+.hr1 { 
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  width: 10%;
+}
+
+
+/* ids */
+
+/*#categories{
+	font-family: Helvetica;
+	text-align: center;
+}*/
+
+
+
+#photo{
+	text-align: center;
+}
+
+#poem {
+	color: gray;
+}
+
+#linkedin{
+	text-align: center;
+	font-family: "Avenir", Helvetica, Arial, sans-serif;
+}
+
+#boxshadow {
+  position: relative;
+  box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, .25);
+  padding: 10px;
+  background: white;
+  border-radius: 25px;
+  width: 50%;
+  text-align: center;
+}
+
+#boxshadow.link {
+  position: relative;
+  box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, .25);
+  padding: 10px;
+  background: white;
+  border-radius: 25px;
+}
+
+#centerp {
+  display: inline;
+  vertical-align: middle;
+  text-align: center;
+}
+
+
+/* classes */
+
+/*
+.p1{
+	color: silver;
+}
+
+.p2{
+	color: blue;
+}
+*/
+
+
+/*
+.cat1{
+	display: table;
+	width: 100%;
+}*/
+
+.cat2{
+	background-color: white;
+}
+
+.cat3{
+	background-color: white;
+}
+
+
+.skills{
+	text-align: center;
+}
+
+.descriptions{
+	text-align: center;
+}
+
+.footer{
+	text-align: center;
+	font-family: "Avenir", Helvetica, Arial, sans-serif;
+}
+
+.footer img {
+  height: 30px;
+  width: 30px;
+}
+
+
+.image-hover:hover {
+  opacity: 0.5;
+}
+
+
