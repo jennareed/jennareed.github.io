@@ -298,49 +298,6 @@ hr {
     text-align: center!important;
 }
 
-.w3-text-white, .w3-hover-text-white:hover {
-    color: #fff!important;
-}
-
-.w3-xxlarge {
-    font-size: 30px!important;
-}
-
-.w3-padding {
-    padding: 8px 16px!important;
-}
-
-.w3-opacity-min {
-    opacity: 0.80;
-}
-
-.w3-black, .w3-hover-black:hover {
-    color: #fff!important;
-    background-color: #000!important;
-    border-radius: 10px;
-}
-
-.w3-green {
-    color: #fff!important;
-    background-color: darkgreen;
-    border-radius: 10px;
-}
-
-.w3-blue {
-    background-color: blue;
-}
-
-.boxgrey {
-    background-color: grey;
-}
-
-.w3-text-light-grey, .w3-hover-text-light-grey:hover, .w3-text-light-gray, .w3-hover-text-light-gray:hover {
-    color: #f1f1f1!important;
-}
-
-.text-dark-grey {
-  color: darkgrey;
-}
 
 .border-round {
     border-radius: 10px;
@@ -591,5 +548,10 @@ hr {
 .image-hover:hover {
   opacity: 0.5;
 }
+
+.image-hover: {
+  opacity: 0.5;
+}
+
 
 
